@@ -1,0 +1,185 @@
+/* CSS for LandingPage */
+
+.landing-page {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff; /* Ocean Green */
+    color: #444;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #128a9f; /* Blue Chill */
+    border-bottom: 2px solid #ffffff; /* Ocean Green */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fffbeb; /* Light contrasting color */
+}
+
+.navigation ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    margin: 0 10px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #fffbeb; /* Light contrasting color */
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navigation a:hover {
+    color: #e67e22; /* Highlight color */
+}
+
+.signup-btn {
+    background-color: #e67e22; /* Highlight color */
+    color: #fffbeb; /* Light contrasting color */
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #128a9f, #46a385); /* Blue Chill to Ocean Green */
+    color: #fffbeb; /* Light contrasting color */
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #fffbeb; /* Light contrasting color */
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.explore-btn {
+    background-color: #128a9f; /* Blue Chill */
+    color: #fffbeb; /* Light contrasting color */
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.3s;
+}
+
+.explore-btn:hover {
+    background-color: #e67e22; /* Highlight color */
+    transform: scale(1.05);
+}
+
+.about, .categories, .testimonials, .contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.category-item {
+    padding: 20px;
+    background: #128a9f; /* Blue Chill */
+    border: 2px solid #ffffff; /* Ocean Green */
+    border-radius: 8px;
+    color: #fffbeb; /* Light contrasting color */
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.category-item:hover {
+    transform: translateY(-5px);
+    background-color:#ff9800/* Ocean Green */
+}
+
+.testimonials .testimonial {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #fffbeb; /* Light background */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #fffbeb; /* Light background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.contact-form button {
+    background-color: #128a9f; /* Blue Chill */
+    color: #fffbeb; /* Light contrasting color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #e67e22; /* Highlight color */
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #128a9f; /* Blue Chill */
+    color: #fffbeb; /* Light contrasting color */
+    font-weight: 500;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+    }
+
+    .hero {
+        padding: 80px 20px;
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
